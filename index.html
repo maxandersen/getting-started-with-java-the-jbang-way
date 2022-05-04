@@ -416,12 +416,10 @@ ul.byline li + li {
 </style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"><link rel="stylesheet" href="css/custom.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Getting Started with Java</h1><div class="preamble"><div class="paragraph"><p>Max Rydahl Andersen<br>
 @maxandersen<br>
 <span class="image icon"><img src="images/icons/redhat.png" alt="redhat"></span></p></div></div></section>
-<section><section id="_redditlearnjava"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/what_is_the_thing_that_makes_java_hard_to_get/i5c726b"><img src="images/reddit-comparehelloworldpython.png" alt="reddit comparehelloworldpython" width="200%"></a></div></div></section><section id="_redditlearnjava_2"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5d97nx"><img src="images/reddit-installingjava.png" alt="reddit installingjava" width="200%"></a></div></div></section><section id="_redditlearnjava_3"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5gfjqy"><img src="images/reddit-runningthedamnthing.png" alt="reddit runningthedamnthing" width="200%"></a></div></div></section></section>
-<section id="_the_jbang_way" data-background-image="images/thisistheway.jpg" data-background-size="cover"><h2>The JBang Way</h2></section>
-<section><section id="_installation"><div class="slide-content"><div class="videoblock stretch"><video src="videos/cleansetup.mp4" width="loop" height="nocontrols" data-autoplay controls>Your browser does not support the video tag.</video></div></div></section><section id="_the_simplest_way"><h2>The Simplest Way</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">curl -Ls https://sh.jbang.dev | bash -s - app setup</code></pre></div></div>
-<div class="ulist"><ul><li class="fragment"><p>Downloads and configure JBang</p></li><li class="fragment"><p>If no Java found, downloads Java 11</p></li></ul></div></div></section><section id="_many_ways" data-background-iframe="https://www.jbang.dev/download/"><h2>Many Ways</h2><div class="slide-content"><aside class="notes"><div class="paragraph"><p>No Java, No IDE, No setup upfront.
-All there is to it.</p></div></aside></div></section></section>
-<section><section id="_hello_world"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ jbang -c 'println("Hello World")'
+<section><section id="_what_is_hard_about_getting_started_with_java"><h2>What is hard about getting started with Java ?</h2></section><section id="_redditlearnjava"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/what_is_the_thing_that_makes_java_hard_to_get/i5c726b"><img src="images/reddit-comparehelloworldpython.png" alt="reddit comparehelloworldpython" width="200%"></a></div></div></section><section id="_redditlearnjava_2"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5d97nx"><img src="images/reddit-installingjava.png" alt="reddit installingjava" width="200%"></a></div></div></section><section id="_redditlearnjava_3"><h2>reddit/learnjava</h2><div class="slide-content"><div class="imageblock"><a class="image" href="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5gfjqy"><img src="images/reddit-runningthedamnthing.png" alt="reddit runningthedamnthing" width="200%"></a></div></div></section></section>
+<section><section id="_getting_started_with_java"><h2>Getting Started with Java</h2></section><section id="_the_jbang_way" data-background-image="images/thisistheway.jpg" data-background-size="cover"><h2>The JBang Way</h2></section><section id="_getting_started"><div class="slide-content"><div class="videoblock stretch"><video src="videos/cleansetup.mp4" width="loop" height="nocontrols" data-autoplay controls>Your browser does not support the video tag.</video></div></div></section><section id="_installation"><h2>Installation</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">curl -Ls https://sh.jbang.dev | bash -s - app setup</code></pre></div></div>
+<div class="ulist"><ul><li class="fragment"><p>Downloads and configure JBang</p></li><li class="fragment"><p>If no Java found, downloads Java 11</p></li></ul></div></div></section><section id="_everywhere" data-background-iframe="https://www.jbang.dev/download/"><h2>Everywhere</h2><div class="slide-content"><aside class="notes"><div class="paragraph"><p>No Java, No IDE, No setup upfront.
+All there is to it.</p></div></aside></div></section><section id="_hello_world"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ jbang -c 'println("Hello World")'
 Hello World</code></pre></div></div></div></section><section id="_hello_world_2"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ jbang -c 'println("Hello "  + args[0])' Universe
 Hello Universe</code></pre></div></div>
 <div class="ulist"><ul><li class="fragment"><p><code>-c</code> evaluates code via JShell</p></li><li class="fragment"><p>Handles user arguments</p></li><li class="fragment"><p>No files to create</p></li><li class="fragment"><p>No <code>public static class main</code></p></li></ul></div></div></section><section id="_hello_world_3"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ jbang -i
@@ -480,8 +478,7 @@ app made with jbang
       &lt;greeting&gt;   The greeting to print
   -h, --help       Show this help message and exit.
   -V, --version    Print version information and exit.</code></pre></div></div></div></section></section>
-<section id="_editing"><h2>Editing</h2></section>
-<section><section id="_the_jbang_way_2" data-background-image="images/mandaloriandessert.jpg" data-background-size="cover"><h2>The JBang Way</h2><div class="slide-content"></div></section><section id="_the_simplest_way_2"><h2>The Simplest Way</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|10,11,12,13,14" data-lang="bash">jbang edit app.java
+<section><section id="_editing"><h2>Editing</h2></section><section id="_the_jbang_way_2" data-background-image="images/mandaloriandessert.jpg" data-background-size="cover"><h2>The JBang Way</h2></section><section id="_the_simplest_way"><h2>The Simplest Way</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|10,11,12,13,14" data-lang="bash">jbang edit app.java
 [jbang] You requested to open default editor but no default
 editor configured.
 
@@ -497,20 +494,77 @@ Do you want to
 (0) Cancel</code></pre></div></div></div></section><section id="" data-background-image="images/vscodium.png" data-background-size="cover"></section><section id="_anywhere" data-background-iframe="https://www.jbang.dev/documentation/guide/latest/editing.html#ide-and-editor-support"><h2>Anywhere</h2></section><section id="_direct_ide_support" class="columns"><h2>Direct IDE Support</h2><div class="slide-content"><div class="paragraph column is-two-thirds"><p>IntelliJ
 <span class="image"><img src="images/intellij.png" alt="intellij" width="150%"></span></p></div>
 <div class="paragraph column"><p>Eclipse and Visual Studio Code In progress</p></div></div></section></section>
-<section id="_debugging"><h2>Debugging</h2></section>
-<section><section id="_the_jbang_way_3" data-background-image="images/mandaloriandebug.jpg" data-background-size="cover"><h2>The JBang Way</h2><div class="slide-content"></div></section><section id="_simple_debugging"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2" data-lang="bash">$ jbang --debug app.java
+<section><section id="_debugging"><h2>Debugging</h2></section><section id="_the_jbang_way_3" data-background-image="images/mandaloriandebug.jpg" data-background-size="cover"><h2>The JBang Way</h2></section><section id="_simple_debugging"><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2" data-lang="bash">$ jbang --debug app.java
 Listening for transport dt_socket at address: 4004</code></pre></div></div></div></section></section>
-<section id="_getting_started_with_java"><h2>Getting Started with Java</h2></section>
-<section><section id="_the_jbang_way_4" data-background-image="images/thisistheway.jpg" data-background-size="cover"><h2>The JBang Way</h2><div class="slide-content"></div></section><section id="_in_5_min_or_less"><h2>In 5 min or less&#8230;&#8203;</h2><div class="slide-content"><div class="paragraph"><p>We started <span class="step highlight-red fragment">creating</span>, <span class="step highlight-red fragment">editing</span>, <span class="step highlight-red fragment">running</span> and <span class="step highlight-red fragment">debugging</span> Java</p></div>
+<section><section id="_what_just_happened"><h2>What just happened?</h2></section><section id="_the_jbang_way_4" data-background-image="images/thisistheway.jpg" data-background-size="cover"><h2>The JBang Way</h2></section><section id="_in_5_min_or_less"><h2>In 5 min or less&#8230;&#8203;</h2><div class="slide-content"><div class="paragraph fragment"><p>We started <span class="step highlight-red fragment">creating</span>, <span class="step highlight-red fragment">editing</span>, <span class="step highlight-red fragment">running</span> and <span class="step highlight-red fragment">debugged</span> Java</p></div>
 <div class="openblock fragment"><div class="content"><div class="ulist"><ul><li><p>Without <code>java</code> or <code>javac</code></p></li><li><p>Witout <code>mvn</code> or <code>gradle</code></p></li><li><p>No <code>vscode</code>, <code>eclipse</code>, <code>intellij</code> Install</p></li><li><p><strong>Just</strong> <code>jbang</code></p></li></ul></div></div></div></div></section></section>
-<section><section id="_after_5_minutes"><h2>After 5 minutes&#8230;&#8203;</h2></section><section id="_go_explore"><h2>Go Explore</h2></section><section id="_run_all_the_things"><h2>Run All The Things</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ cat 5letterwords.txt | jbang -c \
-  'lines().filter(s-&gt;s.contains("dog")).forEach(p-&gt;println(p))'
+<section><section id="_exploring"><h2>Exploring&#8230;&#8203;</h2></section><section id="_the_jbang_way_5"><h2>The JBang Way</h2><div class="slide-content"><div class="imageblock"><img src="images/mandaloriancave.webp" alt="[background"></div></div></section><section id="_one_liner_scripts"><h2>One liner scripts</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ cat 5letterwords.txt | jbang -c \
+  'lines().filter(s-&gt;s.contains("dog")).forEach(p-&gt;println(p))'</code></pre></div></div></div></section><section id="_microservices_wquarkus"><h2>Microservices w/Quarkus</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2|20" data-lang="bash">$ jbang init -t qrest myservice.java
+$ ./myservice.java
+./myservice.java
+[jbang] Resolving dependencies...
+[jbang] Artifacts used for dependency management:
+         io.quarkus:quarkus-bom:pom:1.11.0.Final
+[jbang] io.quarkus:quarkus-resteasy
+Done
+[jbang] Dependencies resolved
+[jbang] Building jar...
+[jbang] Post build with io.quarkus.launcher.JBangIntegration
+May 04, 2022 9:30:43 PM org.jboss.threads.Version &lt;clinit&gt;
+INFO: JBoss Threads version 3.2.0.Final
+May 04, 2022 9:30:44 PM io.quarkus.deployment.QuarkusAugmentor run
+INFO: Quarkus augmentation completed in 999ms
+__  ____  __  _____   ___  __ ____  ______
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/
+ -/ /_/ / /_/ / __ |/ , _/ ,&lt; / /_/ /\ \
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/
+2022-05-04 21:30:45,453 INFO  [io.quarkus] (main) Quarkus 2.8.0.Final on JVM started in 0.839s. Listening on: http://0.0.0.0:8080
+2022-05-04 21:30:45,488 INFO  [io.quarkus] (main) Profile prod activated.
+2022-05-04 21:30:45,488 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]</code></pre></div></div></div></section><section id="_myservice_java"><h2>myservice.java</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-java hljs" data-noescape="true" data-lang="java">///usr/bin/env jbang "$0" "$@" ; exit $?
+//DEPS io.quarkus:quarkus-bom:${quarkus.version:1.11.0.Final}@pom
+//DEPS io.quarkus:quarkus-resteasy
+//JAVAC_OPTIONS -parameters
+
+import io.quarkus.runtime.Quarkus;
+import javax.enterprise.context.ApplicationScoped;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/hello")
+@ApplicationScoped
+public class myservice {
+    @GET
+    public String sayHello() {
+        return "Hello from Quarkus with jbang.dev";
+    }
+}</code></pre></div></div></div></section><section id="_run_all_the_things"><h2>Run All The Things</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2|3|4|5|6|7" data-lang="bash">$ jbang -c "Hello"
+$ jbang app.java
 $ jbang demo.jsh
 $ jbang app.jar
 $ jbang org.jreleaser:jreleaser:1.0.0
-$ jbang jbang.dev</code></pre></div></div></div></section><section id="_catalogs"><h2>Catalogs</h2><div class="slide-content"><div class="ulist"><ul><li><p><code>jbang-catalog</code> repository or <code>jbang-catalog.json</code></p></li><li><p>Run aliases: <code>jbang env@jbangdev</code></p></li><li><p>Init templates: <code>jbang init -t githubapp@quarkusio myapp.java</code></p></li></ul></div></div></section><section id="_catalog_examples"><h2>Catalog examples</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">$ jbang quarkusio@jbangdev
+$ jbang https://github.com/jbangdev/jbang/../examples/inetTest.java
+$ jbang jbang.dev</code></pre></div></div></div></section><section id="_sharing_is_caring"><h2>Sharing is Caring</h2><div class="slide-content"><div class="ulist"><ul><li class="fragment"><p><code>jbang-catalog</code> repository or <code>jbang-catalog.json</code></p></li><li class="fragment"><p>Run aliases: <code>jbang env@jbangdev</code></p></li><li class="fragment"><p>Init templates: <code>jbang init -t githubapp@quarkusio myapp.java</code></p></li></ul></div></div></section><section id="_catalog_examples"><h2>Catalog examples</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2,3" data-lang="bash">$ jbang quarkusio@jbangdev
 $ jbang -s faker@jbangdev -c \
-  'Stream.generate(faker.name()::fullName).filter(s-&gt;s.contains("Angie")).forEach(s -&gt; println("Awesome " + s))'</code></pre></div></div></div></section><section id="_adoption" data-background-iframe="https://www.jbang.dev/usage/"><h2>Adoption</h2></section></section></div></div><script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+  'Stream.generate(faker.name()::fullName).filter(s-&gt;s.contains("Angie")).forEach(s -&gt; println("Awesome " + s))'</code></pre></div></div></div></section><section id="_install_all_the_things"><h2>Install All The Things</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-line-numbers="1|2|3|4|5|6|7" data-lang="bash">$ jbang app install -n myapp https://.../a.jar
+$ jbang app install quarkus@quarkusio
+$ quarkus
+quarkus
+
+Quarkus CLI version 2.8.2.Final
+
+Create Quarkus projects with Maven, Gradle, or JBang.
+Manage extensions and source registries.
+
+Create: quarkus create
+Iterate: quarkus dev
+Build and test: quarkus build
+
+Find more information at https://quarkus.io
+If you have questions, check https://github.com/quarkusio/quarkus/discussions
+
+
+Usage: quarkus [-ehv] [--verbose] [-D=&lt;String=String&gt;]... [COMMAND]
+Options:</code></pre></div></div></div></section><section id="_adoption" data-background-iframe="https://www.jbang.dev/usage/"><h2>Adoption</h2></section></section></div></div><script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
